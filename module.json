@@ -1,0 +1,42 @@
+{
+    "id": "the-void",
+    "title": "The Void",
+    "description": "The Void Organisation in Cyberpunk RED.",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "3lixir Ltd",
+            "url": "https://3lixir.co.uk",
+            "discord": "3lixirttv",
+            "flags": {
+                "patreon": "3lixir",
+                "github": "3lixir-Ltd"
+            }
+        }
+    ],
+    "readme": "https://raw.githubusercontent.com/3lixir-Ltd/the-void/master/README.md",
+    "license": "PROPRIETARY",
+    "bugs": "https://github.com/3lixir-Ltd/the-void/issues",
+    "changelog": "https://raw.githubusercontent.com/3lixir-Ltd/the-void/master/README.md",
+    "url": "https://3lixir.co.uk",
+    "manifest": "https://raw.githubusercontent.com/3lixir-Ltd/the-void/master/module.json",
+    "download": "https://github.com/3lixir-Ltd/the-void/releases/latest/download/the-void.zip",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11.315",
+        "maximum": "11.999"
+    },
+    "packs": [
+        {
+            "name": "the-void",
+            "label": "The Void",
+            "path": "/packs/the-void",
+            "type": "Item",
+            "system": "cyberpunk-red-core",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        }
+    ]
+}
