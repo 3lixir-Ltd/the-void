@@ -1,8 +1,8 @@
 {
     "id": "the-void",
     "title": "The Void",
-    "description": "The Void Organisation in Cyberpunk RED.",
-    "version": "0.0.1",
+    "description": "The Void homebrew Organisation in Cyberpunk RED.",
+    "version": "0.0.2",
     "authors": [
         {
             "name": "3lixir Ltd",
@@ -28,15 +28,46 @@
     },
     "packs": [
         {
-            "name": "the-void",
-            "label": "The Void",
-            "path": "/packs/the-void",
+            "name": "the-void-npcs",
+            "label": "The Void: NPCs",
+            "path": "packs/the-void-npcs",
+            "type": "Actor",
+            "system": "cyberpunk-red-core",
+            "ownership": {
+              "PLAYER": "OBSERVER",
+              "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        },
+        {
+            "name": "the-void-items",
+            "label": "The Void: Items",
+            "path": "/packs/the-void-items",
             "type": "Item",
             "system": "cyberpunk-red-core",
             "ownership": {
                 "PLAYER": "OBSERVER",
                 "ASSISTANT": "OWNER"
             }
+        },
+        {
+            "name": "the-void-pdfs",
+            "label": "The Void: PDFs",
+            "path": "packs/the-void-pdfs",
+            "type": "JournalEntry",
+            "system": "cyberpunk-red-core",
+            "ownership": {
+              "PLAYER": "OBSERVER",
+              "ASSISTANT": "OWNER"
+            },
+            "flags": {}
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "The Void",
+            "sorting": "m",
+            "packs": ["the-void-npcs", "the-void-items", "the-void-pdfs"]
         }
     ]
 }
